@@ -33,8 +33,7 @@ jobs:
       - name: Composer install
         run: composer install
           extensions: mbstring, bcmath # Setup any required extensions for tests
-      - name: Composer update
-        run: composer update
+          
       - name: Run Tests
         run: ./vendor/bin/phpunit
   deploy:
