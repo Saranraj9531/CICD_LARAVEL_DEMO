@@ -30,12 +30,10 @@ jobs:
         uses: shivammathur/setup-php@v1
         with:
           php-version: 8.1 # Use your PHP version
-     - name: Composer install
+      - name: Composer install
         run: composer install
           extensions: mbstring, bcmath # Setup any required extensions for tests
-      - name: Composer update
-        run: composer update
-        
+
   deploy:
     name: Deploy to Production
     runs-on: ubuntu-latest
